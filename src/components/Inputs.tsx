@@ -24,9 +24,7 @@ export const TextInput: React.FunctionComponent<TextInputProps> = (props) => {
     );
 };
 
-
-
-//Password Input 
+//Password Input
 export interface PasswordInputProps extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
     label?: string;
     className?: string;
