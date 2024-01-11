@@ -1,0 +1,40 @@
+{
+    "name": "wtb-component-library",
+    "version": "1.0.0",
+    "description": "A library for Texts, buttons, Drag and Drop, Inputs, Doc Viewers",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "keywords": [
+        "whatstool-library",
+        "Buttons",
+        "Drag and Drop",
+        "Inputs",
+        "Texts",
+        "Doc Viewer"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "@types/react": "^18.2.47",
+        "@types/react-dom": "^18.2.18",
+        "bootstrap": "^5.3.2",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.9.2",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.3.3"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
